@@ -137,6 +137,18 @@ details.more summary{cursor:pointer; color:var(--bordo); font-weight:500; paddin
 .contact p{margin:0}
 .contact .big{font-family:var(--serif); font-size:1.4rem}
 footer{border-top:1px solid var(--rule); padding:2rem 0 3rem; color:var(--muted); font-size:.88rem}
+
+/* Fotos de integrantes */
+.group + .group{margin-top:3rem}
+.group h3{font-size:.95rem; font-weight:600; color:var(--muted); margin:0 0 1.25rem; padding-bottom:.5rem; border-bottom:2px solid var(--ink)}
+.team{display:grid; grid-template-columns:repeat(auto-fill, minmax(170px, 1fr)); gap:2rem 1.5rem; margin-bottom:2rem}
+.member img{width:120px; height:120px; border-radius:50%; object-fit:cover; display:block; margin-bottom:.8rem; border:1px solid var(--rule)}
+.member .n{font-family:var(--serif); font-size:1.12rem; line-height:1.25; display:block}
+.member .r{font-size:.88rem; color:var(--bordo); display:block; margin-top:.15rem}
+.member a{font-size:.85rem; color:var(--muted); word-break:break-all}
+.plain{list-style:none; padding:0; margin:0; columns:3 230px; column-gap:2rem}
+.plain li{padding:.45rem 0; break-inside:avoid}
+.plain li a{display:block; font-size:.88rem; color:var(--muted); word-break:break-all}
 </style>
 </head>
 <body>
@@ -330,49 +342,46 @@ footer{border-top:1px solid var(--rule); padding:2rem 0 3rem; color:var(--muted)
     </div>
   </section>
 
-    <section id="integrantes">
+  <section id="integrantes">
     <div class="wrap">
       <h2>Integrantes</h2>
-      <div class="director">
-        <img src="sorichetti.jpg" alt="Dr. Ing. Patricio Aníbal Sorichetti" loading="lazy">
-        <div class="who">
-          <span class="n">Dr. Ing. Patricio Aníbal Sorichetti</span>
-          <span>Director · <a href="mailto:psorich@fi.uba.ar">psorich@fi.uba.ar</a></span>
+
+      <div class="group">
+        <h3>Docentes e investigadores</h3>
+        <div class="team">
+          <div class="member"><img src="sorichetti.jpg" alt="Dr. Ing. Patricio Aníbal Sorichetti" loading="lazy"><span class="n">Dr. Ing. Patricio Aníbal Sorichetti</span><span class="r">Director</span><a href="mailto:psorich@fi.uba.ar">psorich@fi.uba.ar</a></div>
+          <div class="member"><img src="acosta.jpg" alt="Dr. Eduardo Acosta" loading="lazy"><span class="n">Dr. Eduardo Acosta</span><a href="mailto:eacosta@fi.uba.ar">eacosta@fi.uba.ar</a></div>
+          <div class="member"><img src="gonzalez.jpg" alt="Dr. Ing. Martín Germán González" loading="lazy"><span class="n">Dr. Ing. Martín Germán González</span><a href="mailto:mggonz@fi.uba.ar">mggonz@fi.uba.ar</a></div>
+          <div class="member"><img src="ciocci-brazzano.jpg" alt="Dra. Ligia Ciocci Brazzano" loading="lazy"><span class="n">Dra. Ligia Ciocci Brazzano</span><a href="mailto:bciocci@fi.uba.ar">bciocci@fi.uba.ar</a></div>
+          <div class="member"><img src="corach.jpg" alt="Dr. Ing. Julián Corach" loading="lazy"><span class="n">Dr. Ing. Julián Corach</span><a href="mailto:jcorach@fi.uba.ar">jcorach@fi.uba.ar</a></div>
         </div>
+        <ul class="plain">
+          <li>Dra. Ing. Lucía Cid<a href="mailto:lcid@fi.uba.ar">lcid@fi.uba.ar</a></li>
+          <li>Dra. Liliana Inés Pérez<a href="mailto:lperez@fi.uba.ar">lperez@fi.uba.ar</a></li>
+          <li>Dra. Claudia Matteo<a href="mailto:cmatteo@fi.uba.ar">cmatteo@fi.uba.ar</a></li>
+          <li>Lic. María Celeste Duplaá<a href="mailto:cduplaa@fi.uba.ar">cduplaa@fi.uba.ar</a></li>
+          <li>Dr. Rodolfo Aparicio<a href="mailto:arodolf@fi.uba.ar">arodolf@fi.uba.ar</a></li>
+        </ul>
       </div>
-      <div class="people">
-        <div>
-          <h3>Docentes e investigadores</h3>
-          <ul>
-            <li><img class="av" src="acosta.jpg" alt="Dr. Eduardo Acosta" loading="lazy"><div class="txt">Dr. Eduardo Acosta<a href="mailto:eacosta@fi.uba.ar">eacosta@fi.uba.ar</a></div></li>
-            <li><img class="av" src="gonzalez.jpg" alt="Dr. Ing. Martín Germán González" loading="lazy"><div class="txt">Dr. Ing. Martín Germán González<a href="mailto:mggonz@fi.uba.ar">mggonz@fi.uba.ar</a></div></li>
-            <li><img class="av" src="ciocci-brazzano.jpg" alt="Dra. Ligia Ciocci Brazzano" loading="lazy"><div class="txt">Dra. Ligia Ciocci Brazzano<a href="mailto:bciocci@fi.uba.ar">bciocci@fi.uba.ar</a></div></li>
-            <li><img class="av" src="corach.jpg" alt="Dr. Ing. Julián Corach" loading="lazy"><div class="txt">Dr. Ing. Julián Corach<a href="mailto:jcorach@fi.uba.ar">jcorach@fi.uba.ar</a></div></li>
-            <li><span class="av" aria-hidden="true">LC</span><div class="txt">Dra. Ing. Lucía Cid<a href="mailto:lcid@fi.uba.ar">lcid@fi.uba.ar</a></div></li>
-            <li><span class="av" aria-hidden="true">LP</span><div class="txt">Dra. Liliana Inés Pérez<a href="mailto:lperez@fi.uba.ar">lperez@fi.uba.ar</a></div></li>
-            <li><span class="av" aria-hidden="true">CM</span><div class="txt">Dra. Claudia Matteo<a href="mailto:cmatteo@fi.uba.ar">cmatteo@fi.uba.ar</a></div></li>
-            <li><span class="av" aria-hidden="true">CD</span><div class="txt">Lic. María Celeste Duplaá<a href="mailto:cduplaa@fi.uba.ar">cduplaa@fi.uba.ar</a></div></li>
-            <li><span class="av" aria-hidden="true">RA</span><div class="txt">Dr. Rodolfo Aparicio<a href="mailto:arodolf@fi.uba.ar">arodolf@fi.uba.ar</a></div></li>
-          </ul>
-        </div>
-        <div>
-          <h3>Tesistas de doctorado</h3>
-          <ul>
-            <li><span class="av" aria-hidden="true">FV</span><div class="txt">Ing. Federico Verstraeten<a href="mailto:fverstraeten@fi.uba.ar">fverstraeten@fi.uba.ar</a></div></li>
-            <li><span class="av" aria-hidden="true">PV</span><div class="txt">Ing. Patricia Vázquez<a href="mailto:pvazquez@fi.uba.ar">pvazquez@fi.uba.ar</a></div></li>
-            <li><span class="av" aria-hidden="true">VG</span><div class="txt">Mg. Ing. Vicente Gajardo</div></li>
-          </ul>
-        </div>
-        <div>
-          <h3>Tesistas de grado · Ing. Mecánica</h3>
-          <ul>
-            <li><span class="av" aria-hidden="true">MC</span><div class="txt">Marcel Castellanos</div></li>
-            <li><span class="av" aria-hidden="true">MF</span><div class="txt">Matías Füresz</div></li>
-            <li><span class="av" aria-hidden="true">BK</span><div class="txt">Bautista Krasevec</div></li>
-            <li><span class="av" aria-hidden="true">JS</span><div class="txt">Juan Pablo Sánchez</div></li>
-            <li><span class="av" aria-hidden="true">LG</span><div class="txt">Lautaro Gómez Ciaponni</div></li>
-          </ul>
-        </div>
+
+      <div class="group">
+        <h3>Tesistas de doctorado</h3>
+        <ul class="plain">
+          <li>Ing. Federico Verstraeten<a href="mailto:fverstraeten@fi.uba.ar">fverstraeten@fi.uba.ar</a></li>
+          <li>Ing. Patricia Vázquez<a href="mailto:pvazquez@fi.uba.ar">pvazquez@fi.uba.ar</a></li>
+          <li>Mg. Ing. Vicente Gajardo</li>
+        </ul>
+      </div>
+
+      <div class="group">
+        <h3>Tesistas de grado · Ing. Mecánica</h3>
+        <ul class="plain">
+          <li>Marcel Castellanos</li>
+          <li>Matías Füresz</li>
+          <li>Bautista Krasevec</li>
+          <li>Juan Pablo Sánchez</li>
+          <li>Lautaro Gómez Ciaponni</li>
+        </ul>
       </div>
     </div>
   </section>
